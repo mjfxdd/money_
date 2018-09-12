@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>秒出钱</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_2813_42svpq974tmlsor.css">
+	<link rel="stylesheet" href="../layui-v2.4.3/layui/css/layui.css">
+	<link rel="stylesheet" href="../css/borrow.css">
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<header>
+		<div class="back"><</div>
+		<div class="title">借贷人</div>
+	</header>
+	<div class="layui-row borrow_slider">
+		<div class="borrow_slider_wrap">
+			<div class="layui-carousel" id="test1">
+				<div carousel-item>
+					<div>条目1</div>
+					<div>条目2</div>
+					<div>条目3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-collapse borrow_box" lay-accordion>
+	  <div class="layui-colla-item borrow_list_box">
+		<h2 class="layui-colla-title">产品介绍</h2>
+		<div class="layui-colla-content">
+			<p class='text_grey'>借款对象：22周岁以上</p>
+			<p class='text_grey' style="margin:10px 0;">所需材料：个人信息，亲友信息，身份认证正反面照。手持身份证照，芝麻运营商，淘宝。</p>
+			<div class="product_info">
+				<div class="text_left">借款额度</div>
+				<div class="text_right">500-2万</div>
+			</div>
+			<div class="product_info">
+				<div class="text_left">借款期限</div>
+				<div class="text_right">7~90天</div>
+			</div>
+			<div class="product_info">
+				<div class="text_left">年化利率</div>
+				<div class="text_right">24%</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="layui-colla-item borrow_list_box">
+		  <h2 class="layui-colla-title">申请流程</h2>
+		  <div class="layui-colla-content layui-show">
+			<ul class="layui-timeline">
+			  <li class="layui-timeline-item">
+				<i class="layui-icon layui-timeline-axis">1</i>
+				<div class="layui-timeline-content layui-text">
+				  <h3 class="layui-timeline-title">额度评估</h3>
+				  <p class="text_grey">
+					身份证照，芝麻，运营商，淘宝。
+				  </p>
+				</div>
+			  </li>
+			  <li class="layui-timeline-item">
+				<i class="layui-icon layui-timeline-axis">2</i>
+				<div class="layui-timeline-content layui-text">
+				  <h3 class="layui-timeline-title">资格验证</h3>
+				  <p class="text_grey">身份证信息验证，电商信息验证，实名手机号验证</p>
+				</div>
+			  </li>
+			  <li class="layui-timeline-item">
+				<i class="layui-icon layui-timeline-axis">3</i>
+				<div class="layui-timeline-content layui-text">
+				  <h3 class="layui-timeline-title">提交审批</h3>
+				  <p class="text_grey">
+					身份一旦确认，分分钟下款
+				  </p>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+	  </div>
+	  <div class="layui-colla-item borrow_list_box">
+		<h2 class="layui-colla-title">费用说明</h2>
+		<div class="layui-colla-content">
+			<p>年化利率：24%</p>
+			<P>费用组成项：本金+年利率</P>
+		</div>
+	  </div>
+	  <div class="layui-colla-item borrow_list_box">
+		<h2 class="layui-colla-title">支持城市</h2>
+		<div class="layui-colla-content">
+			<p class="text_grey">覆盖全国各省市</p>
+			</div>
+	  </div>
+	</div>
+		
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../layui-v2.4.3/layui/layui.all.js"></script>
+<script type="text/javascript">
+	layui.use('carousel', function(){
+	  var carousel = layui.carousel;
+	  //建造实例
+	  carousel.render({
+		elem: '#test1',
+		width: '100%' ,//设置容器宽度
+		height: '100px',
+		arrow: 'none', //始终显示箭头
+		anim: 'default' //切换动画方式
+	  });
+	});
+	layui.use('element', function(){
+	  var element = layui.element;
+	  
+	  //…
+	});
+</script>

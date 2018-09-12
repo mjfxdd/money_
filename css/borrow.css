@@ -1,0 +1,62 @@
+header{
+	background: #4498f8;
+	color: #FFFFFF;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.back{
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+.borrow_box{
+	border: none;
+}
+.borrow_slider{
+	margin: 10px 0;
+}
+.borrow_list_box{
+	margin: 10px 0;
+}
+.product_info{
+	clear: both;
+	overflow: auto;
+	margin: 10px 0;
+}
+.text_left{
+	float: left;
+	color: #000;
+}
+.text_right{
+	float: right;
+	color: #969696;
+}
+.text_grey{
+	color: #969696;
+}
+.layui-carousel-ind li{
+	height: 5px;
+	width: 5px;
+}
+.layui-carousel-ind{
+	top: -20px;
+}
+.layui-col-space3{
+	margin-left: 0;
+    margin-right: 0;
+}
+.layui-timeline-item:before{
+	left: 3px;
+	width: 3px;
+}
+.layui-timeline-item:before, hr{
+	background-color: #4a92ff;
+}
+.layui-timeline-axis{
+	color: #fff;
+    background: #4a92ff;
+}
+.layui-timeline-axis:hover{
+	color: transparent;
+}

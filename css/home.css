@@ -1,0 +1,81 @@
+header{
+	background: #4498f8;
+	color: #FFFFFF;
+	height: 300px;
+}
+.title{
+	background: #367bf0;
+	padding: 10px 0;
+    text-align: center;
+}
+.money_info{
+    text-align: center;
+}
+.money_info_title{
+	margin: 20px 0;
+	font-size: 14px;
+}
+.money_info_number{
+	font-size: 60px;
+}
+.money_info_notice{
+	font-size: 12px;
+    margin: 20px 0;
+}
+.money_info_get_money{
+    background: #fff;
+    color: #367bf0;
+    padding: 10px;
+    margin: 0 auto;
+    width: 120px;
+    border-radius: 4px;
+}
+.content{
+	background: #ebebeb;
+	padding: 10px 0;
+}
+.box_wrap {
+    height: 100px;
+	background: #FFFFFF;
+	text-align: center;
+}
+.box_title{
+	padding: 30px 0 10px;
+	font-size: 16px;
+    font-weight: bold;
+}
+.box_tip{
+	font-size: 12px;
+    color: #ababab;
+}
+.more{
+	line-height: 100px;
+	padding: 0;
+	color: #f7c747;
+	font-weight: bold;
+    font-size: 40px;
+}
+.footer_item{
+	text-align: center;
+	line-height: 40px;
+}
+.layui-carousel-ind li{
+	height: 5px;
+	width: 5px;
+}
+.layui-carousel-ind{
+	top: -20px;
+}
+.layui-col-space3{
+	margin-left: 0;
+    margin-right: 0;
+}
+footer{
+	position: fixed;
+    overflow: auto;
+    width: 100%;
+    bottom: 0;
+}
+.box_wrap{
+	cursor: pointer;
+}

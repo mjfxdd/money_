@@ -1,0 +1,74 @@
+.head_tip{
+	font-size: 22px;
+    padding: 12px;
+}
+.head_content{
+	font-size: 14px;
+    padding: 0px 8px 2px 12px;
+    line-height: 20px;
+}
+header {
+    background: #4498f8;
+    color: #FFFFFF;
+    position: relative;
+    height: 300px;
+}
+.stepPic{
+    position: absolute;
+    bottom: 0;
+    height: 57px;
+    background: #367bf0;
+    width: 100%;
+
+}
+.step{
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 22px solid #367bf0;
+	}
+.stepPart{
+    position: absolute;
+    bottom: 56px;
+    
+}
+.stepGoing {
+    position: absolute;
+    bottom: -58px;
+}
+.titleBar{
+	   background: #F2F2F2;
+    color: #989696;
+    height: 44px;
+    line-height: 44px;
+    text-indent: 12px;`
+}
+.contentPart{
+     padding: 20px 12px;
+    border-bottom: 1px solid bisque;
+    height: 32px;
+    width: 93%;
+    margin: 0 auto;
+}
+.conTitle{
+	 margin: 0 13px;
+    
+    float: left;
+}
+.titleName{
+	font-size:18px
+}
+.titleDes{
+	margin: 8px 0px;
+    font-size: 12px;
+    color: #B4B4B4;
+}
+.authState{
+	font-size: 13px;
+    line-height: 46px;
+    float: right;
+}
+.conIco{
+	float:left
+}

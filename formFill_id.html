@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>秒出钱</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_2813_42svpq974tmlsor.css">
+	<link rel="stylesheet" href="layui-v2.4.3/layui/css/layui.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/formFill.css">
+	
+
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+
+	<div class="head_title">
+		<span class="goBack"> <img  height="20" src="img/goBack.png" alt=""> </span>个人信息
+	</div>
+	<div class="titleBar">
+		点击上传身份证信息，手持证件照
+	</div>
+	<div class="layui-upload">
+		<button  type="button" class="layui-btn" id="test1">上传身份证正面照</button>
+		<div class="layui-upload-list">
+			<label for="test1"><img class="layui-upload-img" src="img/upImg.png"  id="demo1">
+			<p id="demoText"></p>
+		</div>
+	</div>   
+
+		<div class="layui-upload">
+			<button  type="button" class="layui-btn" id="test2">上传身份证反面照</button>
+			<div class="layui-upload-list">
+				<label for="test2"><img class="layui-upload-img" src="img/upImg.png"  id="demo2">
+				<p id="demoText"></p>
+			</div>
+		</div>  
+	
+	<div class="layui-upload">
+		<button  type="button" class="layui-btn" id="test3">上传手持身份证照</button>
+		<div class="layui-upload-list">
+			<label for="test3"><img class="layui-upload-img" src="img/upImg.png" id="demo3">
+			<p id="demoText"></p>
+		</div>
+	</div>  
+		
+	
+	<div style="clear: both;"></div>
+	<div class="sub">提交</div>
+	
+	
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="layui-v2.4.3/layui/layui.all.js"></script>
+<script type="text/javascript">
+	
+layui.use('upload', function(){
+  var $ = layui.jquery
+  ,upload = layui.upload;
+  
+  //普通图片上传
+  var uploadInst = upload.render({
+    elem: '#test1'	
+    ,url: '/upload/'
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#demo1').attr('src', result); //图片链接（base64）
+      });
+    } 
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+  })
+	})
+	
+	layui.use('upload', function(){
+	  var $ = layui.jquery
+	  ,upload = layui.upload;
+	  
+	  //普通图片上传
+	  var uploadInst = upload.render({
+	    elem: '#test2'	
+	    ,url: '/upload/'
+	    ,before: function(obj){
+	      //预读本地文件示例，不支持ie8
+	      obj.preview(function(index, file, result){
+	        $('#demo2').attr('src', result); //图片链接（base64）
+	      });
+	    } 
+	    ,done: function(res){
+	      //如果上传失败
+	      if(res.code > 0){
+	        return layer.msg('上传失败');
+	      }
+	      //上传成功
+	    }
+	  })
+		})
+		
+		layui.use('upload', function(){
+		  var $ = layui.jquery
+		  ,upload = layui.upload;
+		  
+		  //普通图片上传
+		  var uploadInst = upload.render({
+		    elem: '#test3'	
+		    ,url: '/upload/'
+		    ,before: function(obj){
+		      //预读本地文件示例，不支持ie8
+		      obj.preview(function(index, file, result){
+		        $('#demo3').attr('src', result); //图片链接（base64）
+		      });
+		    } 
+		    ,done: function(res){
+		      //如果上传失败
+		      if(res.code > 0){
+		        return layer.msg('上传失败');
+		      }
+		      //上传成功
+		    }
+		  })
+			})
+
+</script>

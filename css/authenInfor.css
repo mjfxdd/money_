@@ -1,0 +1,102 @@
+
+.head_title{
+	  height: 60px;
+    background: #3575F8;
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    line-height: 56px;
+		letter-spacing: 4px;
+}
+.goBack{
+	position: absolute;
+	left: 20px;
+}
+
+.head_tip{
+	font-size: 22px;
+    padding: 12px;
+}
+.head_content{
+	font-size: 14px;
+    padding: 0px 8px 2px 12px;
+    line-height: 20px;
+}
+header {
+    background: #4498f8;
+    color: #FFFFFF;
+    position: relative;
+    height: 300px;
+}
+.stepPic{
+    position: absolute;
+    bottom: 0;
+    height: 57px;
+    background: #367bf0;
+    width: 100%;
+
+}
+.step{
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 22px solid #367bf0;
+	}
+.stepPart{
+    position: absolute;
+    bottom: 56px;
+    
+}
+.stepGoing {
+    position: absolute;
+    bottom: -58px;
+}
+.titleBar{
+	   background: #F2F2F2;
+    color: #989696;
+    height: 44px;
+    line-height: 44px;
+    text-indent: 12px;`
+}
+.contentPart{
+     padding: 20px 12px;
+    border-bottom: 1px solid bisque;
+    height: 32px;
+    width: 93%;
+    margin: 0 auto;
+}
+.conTitle{
+	 margin: 5px 13px;
+    float: left;
+    font-weight: bold;
+}
+.titleName{
+	font-size:18px
+}
+.titleDes{
+	margin: 8px 0px;
+    font-size: 12px;
+    color: #B4B4B4;
+}
+.authState{
+	margin: 8px 13px;
+    float: right;
+    font-weight: bold;font-size: 18px;
+}
+.conIco{
+	float:left
+}
+.sub{
+    width: 80%;
+    height: 50px;
+    background: #367BF0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 46px;
+    margin: 70px auto;
+    letter-spacing: 6px;
+    border-radius: 8px;
+	}

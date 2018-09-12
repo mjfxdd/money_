@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>秒出钱</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_2813_42svpq974tmlsor.css">
+	<link rel="stylesheet" href="layui-v2.4.3/layui/css/layui.css">
+	<link rel="stylesheet" href="css/home.css">
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<header>
+		<div class="title">秒出钱</div>
+		<div class="money_info">
+			<div class="money_info_title">最高可借(元)</div>
+			<div class="money_info_number">20000</div>
+			<div class="money_info_notice">用户 158****8085 得到 5000 元</div>
+			<div class="money_info_get_money">申请借款</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="layui-row layui-col-space3">
+			<div class="layui-col-xs6">
+				<div class="box_wrap borrower">
+					<p class="box_title">
+						<i class="layui-icon layui-icon-face-smile"></i>
+						借贷人</p>
+					<p class="box_tip">授权身份信息、芝麻来评估</p>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="box_wrap borrow_way">
+					<p class="box_title">
+					<i class="layui-icon layui-icon-face-smile"></i>
+						借款攻略
+					</p>
+					<p class="box_tip">帮您更快了解借款流程</p>
+				</div>
+			</div>
+		</div>
+		<div class="layui-row layui-col-space3">
+			<div class="layui-col-xs6">
+				<div class="box_wrap ask_professor">
+					<p class="box_title">
+						<i class="layui-icon layui-icon-face-smile"></i>
+						寻求专业顾问
+					</p>
+					<p class="box_tip">专业人士解答你的具体需求</p>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="box_wrap box_wrap_right">
+					<p class="box_title more">
+						<i class="layui-icon layui-icon-more"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="slider">
+			<div class="layui-carousel" id="test1">
+			<div carousel-item>
+				<div>条目1</div>
+				<div>条目2</div>
+				<div>条目3</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="layui-row">
+			<div class="layui-col-xs4 footer_item">
+				<div class="home">首页</div>
+			</div>
+			<div class="layui-col-xs4 footer_item">
+				<div class="validate">认证</div>
+			</div>
+			<div class="layui-col-xs4 footer_item">
+				<div class="my">我的</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="layui-v2.4.3/layui/layui.all.js"></script>
+<script type="text/javascript">
+	layui.use('carousel', function(){
+	  var carousel = layui.carousel;
+	  //建造实例
+	  carousel.render({
+		elem: '#test1',
+		width: '100%' ,//设置容器宽度
+		height: '100px',
+		arrow: 'none', //始终显示箭头
+		anim: 'default' //切换动画方式
+	  });
+	});
+</script>
